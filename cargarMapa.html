@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <title>BieS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--<link rel="shortcut icon" href="assets/ico/polloico.ico">-->
+
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 50%;
+            width: 100%;
+        }
+    </style>
+    <script type="text/javascript">
+
+var map;
+function initMap() {
+ map = new google.maps.Map(document.getElementById('map'), {
+   center: {lat: 10.929790, lng: -74.803327},
+   zoom: 15
+ });
+}
+
+   </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQdOfHb-AaC15lC_nxb0MLi0UhmXlT5gM&callback=initMap">
+    </script>
+</head>
+
+<body>
+    <!-- Top menu -->
+    <nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="menu.html">BootZard - Bootstrap Wizard Template</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="top-navbar-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <span class="li-social">
+            								<a href="" ><i class="fa fa-map"></i></a></span>
+                        <span class="li-social">
+            								<a href="" ><i class="fa fa-clock-o"></i></a></span>
+                        <span class="li-social">
+            								<a href="" ><i class="fa fa-heart"></i></a></span>
+                        <span class="li-social">
+            								<a href="" ><i class="fa fa-search"></i></a></span>
+                        <span class="li-social">
+                            <a href=""><i class="fa fa-bar-chart"></i></a></span>
+                        <span class="li-social">
+            								<a href="cerrar.php"><i class="fa fa-sign-out"></i></a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top content -->
+
+    <div class="container-fluid" id="map"></div>
+    <!-- Javascript -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/retina-1.1.0.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+</body>
+
+</html>

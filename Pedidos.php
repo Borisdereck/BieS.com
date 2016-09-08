@@ -16,14 +16,14 @@ if (isset($_SESSION["usuario"]) && isset($_SESSION["pass"]))
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-	<title>Polloandino.com</title>
+	<title>>BieS</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/form-elements.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="shortcut icon" href="assets/ico/polloico.ico">
+	<!--<link rel="shortcut icon" href="assets/ico/polloico.ico">-->
 	<link rel="stylesheet" href="css/combo.css">
 
 	<link rel="STYLESHEET" type="text/css" href="../../librerias/dhtmlxSuite/dhtmlxCombo/codebase/dhtmlxcombo.css">
@@ -1407,15 +1407,15 @@ if (isset($_SESSION["usuario"]) && isset($_SESSION["pass"]))
 	</div>
 </div>
 	<div id="zona_botones_pedido" class="container-fluid oper ">
-	
+
 					<input type="button" id="boton_agregar_item" class="btn btn-submit" value="Agregar item" onclick="formato_agregar_item();">
-			
+
 					<input type="button" id="boton_eliminar_item" class="btn btn-submit" value="Eliminar item" onclick="eliminar_item_pedido();">
-				
+
 					<input type="button" id="boton_abandonar_pedido" class="btn btn-submit"  value="Abandonar pedido" onclick="abandonar_pedido();">
-			
+
 					<input type="button" id="boton_enviar_pedido" class="btn btn-submit" value="Enviar pedido" onclick="formato_enviar_pedido();">
-			
+
 					<input type="button" id="boton_ver_cartera" class="btn btn-submit" value="Ver cartera" onclick="mostrar_datos_cartera();">
 		</div>
 	</div>

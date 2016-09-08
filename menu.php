@@ -6,23 +6,21 @@ if (isset($_SESSION["usuario"]) && isset($_SESSION["pass"]))
 }else {
 	header("location:index.php");
 }
-
- ?>
-
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
-    <title>Polloandino.com</title>
+    <title>BieS</title>
     <!-- CSS -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/form-elements.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/ico/polloico.ico">
+      <!--<link rel="shortcut icon" href="assets/ico/polloico.ico">-->
 </head>
 <body>
     <!-- Top menu -->
@@ -42,13 +40,13 @@ if (isset($_SESSION["usuario"]) && isset($_SESSION["pass"]))
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <span class="li-social">
-            								<a href="" ><i class="fa fa-shopping-cart"></i></a></span>
+            								<a href="cargarMapa.html" ><i class="fa fa-map"></i></a></span>
                               <span class="li-social">
-            								<a href="" ><i class="fa fa-archive"></i></a></span>
+            								<a href="" ><i class="fa fa-clock-o"></i></a></span>
                             <span class="li-social">
-            								<a href="" ><i class="fa fa-calendar"></i></a></span>
+            								<a href="" ><i class="fa fa-heart"></i></a></span>
                             <span class="li-social">
-            								<a href="" ><i class="fa fa-users"></i></a></span>
+            								<a href="" ><i class="fa fa-search"></i></a></span>
                             <span class="li-social">
                             <a href=""><i class="fa fa-bar-chart"></i></a></span>
                             <span class="li-social">
@@ -65,7 +63,7 @@ if (isset($_SESSION["usuario"]) && isset($_SESSION["pass"]))
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2 text">
-                    <h1>Menú Principal</h1>
+                    <h1>Menú</h1>
                 </div>
             </div>
             <div class="row">
@@ -75,39 +73,39 @@ if (isset($_SESSION["usuario"]) && isset($_SESSION["pass"]))
                 <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-box">
 					<div class="f1">
                         <div class="media feature">
-                            <a class="pull-left" href="Pedidos.php">
-                                <i class="fa fa-shopping-cart fa-2x"></i>
+                            <a class="pull-left" href="cargarMapa.html">
+                                <i class="fa fa-map fa-2x"></i>
                             </a>
                             <div class="media-body">
-                                <h3 class="media-heading">Pedidos</h3>
+                                <h3 class="media-heading">Ver Puntos Cerca</h3>
                           </div>
                         </div>
 
                         <div class="media feature">
                             <a class="pull-left" href="#">
-                                <i class="fa fa-archive fa-2x"></i>
+                                <i class="fa fa-clock-o fa-2x"></i>
                             </a>
                             <div class="media-body">
-                                <h3 class="media-heading">Inventario</h3>
+                                <h3 class="media-heading">Historial de Sitios</h3>
 
                             </div>
                         </div>
                         <div class="media feature">
                             <a class="pull-left" href="#">
-                                <i class="fa fa-calendar fa-2x"></i>
+                                <i class="fa fa-heart fa-2x"></i>
                             </a>
                             <div class="media-body">
-                                <h3 class="media-heading">Agenda</h3>
+                                <h3 class="media-heading">Favoritos</h3>
                               </div>
                         </div>
 
                         <div class="media feature">
                             <a class="pull-left" href="#">
-                                <i class="fa fa-users fa-2x"></i>
+                                <i class="fa fa-search fa-2x"></i>
                             </a>
                             <div class="media-body">
 
-                            <h3 class="media-heading">Clientes</h3>
+                            <h3 class="media-heading">Buscar</h3>
                             </div>
                         </div>
 
@@ -121,14 +119,7 @@ if (isset($_SESSION["usuario"]) && isset($_SESSION["pass"]))
                             </div>
                         </div>
 
-                         <div class="media feature">
-                            <a class="pull-left" href="#">
-                                <i class="fa fa-sign-out fa-2x"></i>
-                            </a>
-                            <div class="media-body">
-                                <h3 class="media-heading">Finalizar Jornada</h3>
-                           </div>
-                        </div>
+
 
         </div>
     </div>
